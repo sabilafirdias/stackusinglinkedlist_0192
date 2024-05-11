@@ -9,6 +9,16 @@ class node {
 public:
     int data;
     node* next;
+
+    node() {
+        next = NULL;
+    }
+};
+
+//stack class
+class stack {
+private:
+    node* top;      //pointer to the top node of the stack
 };
 
 int main()
