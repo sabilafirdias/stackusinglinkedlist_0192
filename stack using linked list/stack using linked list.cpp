@@ -40,7 +40,7 @@ public:
         if (isEmpty()) {
             cout << "Stack is empty." << endl;
         }
-        cout < "Popped value: " << top->data << endl;
+        cout << "Popped value: " << top->data << endl;
         top = top->next;        // update the top pointer to the next node
     }
 
@@ -48,6 +48,13 @@ public:
     void peek() {
         if (top == NULL) {
             cout << "List is empty." << endl;
+        }
+        else {
+            Node* current = top;
+            while (current != NULL) {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
         }
     }
 };
